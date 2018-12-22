@@ -3,12 +3,12 @@
     using System;
     class Program
     {
+        public static string username = "test";
+        public static string password = "test";
+        public static string serverIP = "192.168.11.45";
+
         static void Main(string[] args)
         {
-            string username = "test";
-            string password = "test";
-            string serverIP = "192.168.11.45";
-
             if (args.Length == 0)
             {
                 //print err
@@ -41,7 +41,7 @@
                 }
             }
 
-            runGame.LaunchGame(username, password, serverIP);
+            runGame.LaunchGameAsync(username, password, serverIP);
         } 
     }
 }
