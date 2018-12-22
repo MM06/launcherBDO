@@ -1,0 +1,7 @@
+D:\sources\new_project\testBDO\testBDO\obj\Debug\testBDO.csproj.CoreCompileInputs.cache
+D:\sources\new_project\testBDO\testBDO\bin\Debug\testBDO.exe.config
+D:\sources\new_project\testBDO\testBDO\bin\Debug\testBDO.exe
+D:\sources\new_project\testBDO\testBDO\bin\Debug\testBDO.pdb
+D:\sources\new_project\testBDO\testBDO\obj\Debug\testBDO.exe
+D:\sources\new_project\testBDO\testBDO\obj\Debug\testBDO.pdb
+D:\sources\new_project\testBDO\testBDO\obj\Debug\testBDO.csprojAssemblyReference.cache
