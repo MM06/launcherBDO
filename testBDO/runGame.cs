@@ -11,6 +11,7 @@ namespace testBDO
 {
     class runGame
     {
+        public static string exeName = "BlackDesert64.exe";
         [DllImport("kernel32.dll")]
         public static extern int OpenProcess(uint dwDesiredAccess, bool bInheritHandle, int dwProcessId);
 
@@ -31,8 +32,9 @@ namespace testBDO
 
         public async static void LaunchGame(string username, string password, string ServerIP)
         {
-            await OpenGameExe("BlackDesert64.exe", username, password);
-            await StartProcessManipulation("BlackDesert64", ServerIP);
+            
+            await OpenGameExe(exeName, username, password);
+            await StartProcessManipulation(exeName, ServerIP);
         }
 
         public async static Task OpenGameExe(string exeFile, string username, string password)
