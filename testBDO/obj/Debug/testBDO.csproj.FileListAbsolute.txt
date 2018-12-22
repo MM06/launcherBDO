@@ -1,6 +1,0 @@
-D:\sources\repos\launcherBDO\testBDO\bin\Debug\testBDO.exe.config
-D:\sources\repos\launcherBDO\testBDO\bin\Debug\testBDO.exe
-D:\sources\repos\launcherBDO\testBDO\bin\Debug\testBDO.pdb
-D:\sources\repos\launcherBDO\testBDO\obj\Debug\testBDO.csproj.CoreCompileInputs.cache
-D:\sources\repos\launcherBDO\testBDO\obj\Debug\testBDO.exe
-D:\sources\repos\launcherBDO\testBDO\obj\Debug\testBDO.pdb
