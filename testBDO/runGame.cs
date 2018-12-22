@@ -39,7 +39,12 @@ namespace testBDO
 
         public async static Task OpenGameExe(string exeFile, string username, string password)
         {
-            Process.Start(exeFile, (username + "," + password) ?? "");
+            string argument = string.Format("{0},{1}", username, password);
+
+            Process game = new Process();
+            game.StartInfo.FileName = exeFile;
+            game.StartInfo.Arguments = argument;
+            game.Start();
         }
 
         public static void WriteProcessMemory(long adress, byte[] processBytes, int processHandle)
