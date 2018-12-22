@@ -42,8 +42,6 @@
             }
 
             runGame.LaunchGame(username, password, serverIP);
-
-            //Console.ReadLine();
         } 
     }
 }

@@ -47,7 +47,6 @@ namespace testBDO
 
         public async static Task StartProcessManipulation(string processName, string ServerIP)
         {
-            // Initialisation
             await Task.Delay(1500); // Wait for the client to start.
 
             // Start process manipulation
@@ -56,10 +55,8 @@ namespace testBDO
             //Console.WriteLine(processesByName[0].Id);
             int processHandle = OpenProcess(0x1F0FFF, false, processesByName[0].Id); // Open the process for data stream manipulation.
             IntPtr baseAddress = processesByName[0].MainModule.BaseAddress; // Set the data stream manipulation to start at the base address of the process.
-
             // Start server IP initialisation
             byte[] serverIPtranslation = Encoding.ASCII.GetBytes(ServerIP); // Translate server IPv4 address
-
             // Start data stream manipulation
             WriteProcessMemory(baseAddress.ToInt64() + 0x0A29306, new byte[] { 0x90, 0x90 }, processHandle); // Crypto fix by Matt
             WriteProcessMemory(baseAddress.ToInt64() + 0x07A5B0A, new byte[] { 0x90, 0x90 }, processHandle); // XC Fix 1 by Matt
