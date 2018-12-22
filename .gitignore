@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/testBDO/v15
+/testBDO/obj/Debug
+/.vs/launcherBDO/v15/Server/sqlite3
+/testBDO/bin/Debug
